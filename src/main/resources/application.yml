@@ -1,0 +1,19 @@
+
+spring:
+  datasource-a:
+    unique-resource-name: xa-datasource-a
+    xa-data-source-class-name: com.mysql.cj.jdbc.MysqlXADataSource
+    xa-properties:
+      url: jdbc:mysql://127.0.0.1:3306/db_a?useSSL=true&serverTimezone=Asia/Shanghai
+      user: root
+      password: 123456
+  datasource-b:
+    unique-resource-name: xa-datasource-b
+    xa-data-source-class-name: com.mysql.cj.jdbc.MysqlXADataSource
+    xa-properties:
+      url: jdbc:mysql://127.0.0.1:3306/db_b?useSSL=true&serverTimezone=Asia/Shanghai
+      user: root
+      password: 123456
+
+server:
+  port: 9999
